@@ -1,0 +1,93 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#home-section, #projects-section {
+    background-color: #F2994A;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#about-section, #contact-section {
+    background-color: #4A4A4B;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#footer{
+    display: flex;
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    top: 90%;
+}
+  
+  #navigation {
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    list-style:none;
+  /* 	z-index:3; */
+  }
+  
+  #navigation li {
+    padding: 0px 20px;
+  }
+
+  #navigation a{
+    display: inline-block;
+    background: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    
+  }
+
+  #navigation a:hover {
+      background: #ddd;
+  }
+  
+.panel{
+      min-width: 100%;
+      min-height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin-top: -200%;
+      position: absolute;
+      z-index: 2;
+      -webkit-transition: all .8s linear;
+      -moz-transition: all .8s linear;
+      -o-transition: all .8s linear;
+      transition: all .8s linear;
+  }
+
+.panel:target{
+      margin-top: 0%;
+  }
+  
+.content {
+      position: absolute;
+      display: flex;
+    }
+
+.home {
+      justify-content: center;
+      align-items: center;
+    }
+    
+  
+  #home-section:target ~ #footer #navigation #link-home{
+    background: #4A4A4B}
+
+  #about-section:target ~ #footer #navigation #link-about{
+    background: #F2994A}
+
+  #projects-section:target ~ #footer #navigation #link-projects{
+    background: #4A4A4B}
+
+  #contact-section:target ~ #footer #navigation #link-contact{
+    background-color: #F2994A}
