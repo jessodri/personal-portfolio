@@ -31,30 +31,33 @@ html, body {
     justify-content: space-around;    
     }
 
-
+    img {
+        width: 100%;
+        height: 50%;
+    }
   
 h2 {
     margin-left: -20px;
-    margin-top: 10%;
+    margin-top: 1em;
     background-color: white;
     color: #4A4A4B;
-    padding: 15px 40px;
+    padding: 10px 40px;
     align-self: flex-start;
     border-radius: 15px;
     font-family: 'Yantramanav', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 h3 {
     margin-right: -20px;
-    margin-bottom: 15%;
+    margin-bottom: 3em;
     background-color: #4A4A4B;
     color: white;
-    padding: 15px 40px;
+    padding: 10px 40px;
     align-self: flex-end;
     border-radius: 15px;
     font-family: 'Yantramanav', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
 
 }
 
@@ -92,6 +95,7 @@ top: 90%;
 width: 100%;
 display:flex;
 justify-content: center;
+align-items: center;
 list-style:none;
 /* 	z-index:3; */
 }
