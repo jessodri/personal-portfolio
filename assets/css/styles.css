@@ -1,56 +1,63 @@
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     min-width: 100%;
     min-height: 100%;
+    font-size: 16px;
 }
 
 #home-section, #projects-section {
     background-color: #F2994A;
-    min-width: 100%;
-    min-height: 100%;
 }
 
 #about-section, #contact-section {
     background-color: #4A4A4B;
+}
+
+.panel-one {
+    position: absolute;
     min-width: 100%;
     min-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-#footer{
+.home {
+    width: 100%;
+    height: 100%;
     display: flex;
-    position: absolute;
-    z-index: 2000;
-    width: 100%;
-    top: 90%;
+    flex-direction: column;
+    justify-content: space-around;    
+    }
+
+
+  
+h2 {
+    margin-left: -20px;
+    margin-top: 10%;
+    background-color: white;
+    color: #4A4A4B;
+    padding: 15px 40px;
+    align-self: flex-start;
+    border-radius: 15px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 3rem;
 }
-  
-  #navigation {
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    list-style:none;
-  /* 	z-index:3; */
-  }
-  
-  #navigation li {
-    padding: 0px 20px;
-  }
 
-  #navigation a{
-    display: inline-block;
-    background: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    
-  }
+h3 {
+    margin-right: -20px;
+    margin-bottom: 15%;
+    background-color: #4A4A4B;
+    color: white;
+    padding: 15px 40px;
+    align-self: flex-end;
+    border-radius: 15px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 3rem;
 
-  #navigation a:hover {
-      background: #ddd;
-  }
-  
+}
+
 .panel{
       min-width: 100%;
       min-height: 100%;
@@ -58,7 +65,7 @@ body {
       overflow-x: hidden;
       margin-top: -200%;
       position: absolute;
-      z-index: 2;
+      /* z-index: 2; */
       -webkit-transition: all .8s linear;
       -moz-transition: all .8s linear;
       -o-transition: all .8s linear;
@@ -71,15 +78,41 @@ body {
   
 .content {
       position: absolute;
-      display: flex;
     }
 
-.home {
-      justify-content: center;
-      align-items: center;
-    }
-    
-  
+#footer{
+display: flex;
+position: absolute;
+z-index: 2000;
+width: 100%;
+top: 90%;
+}
+
+#navigation {
+width: 100%;
+display:flex;
+justify-content: center;
+list-style:none;
+/* 	z-index:3; */
+}
+
+#navigation li {
+padding: 0px 20px;
+}
+
+#navigation a{
+display: inline-block;
+background: white;
+height: 30px;
+width: 30px;
+border-radius: 50%;
+
+}
+
+#navigation a:hover {
+    background: #ddd;
+}  
+
   #home-section:target ~ #footer #navigation #link-home{
     background: #4A4A4B}
 
