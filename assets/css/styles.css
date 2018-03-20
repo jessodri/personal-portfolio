@@ -99,8 +99,8 @@ h3 {
 h2, h3 {
         -vendor-animation-duration: 3s;
         animation-duration: 3s;
-        -vendor-animation-delay: 3s;
-        animation-delay: 3s;
+        -vendor-animation-delay: 1s;
+        animation-delay: 1s;
 }
 img {
     width: 100vw;
@@ -205,11 +205,11 @@ img:hover {
 form {
     padding-top: 1rem;
 }
-form p {
-    padding: 1rem;
-    color: white;
-    line-height: .2;
 
+form p {
+    padding: .5rem;
+    color: white;
+    line-height: .1;
 }
 
 label {
@@ -255,7 +255,7 @@ button:hover {
 }
 
 .fa {
-    padding: 2rem 2rem;
+    padding: 1.8rem 1.8rem;
 }
 .fa-github-square {
     color: white;
@@ -295,15 +295,21 @@ i:hover {
 }
 
 #navigation li {
-    padding: 0px 20px;
+    padding: 0px 5px;
+    align-items: center;
 }
 
 #navigation a{
     display: inline-block;
     background: white;
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+    height: 40px;
+    width: 80px;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #4A4A4B;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.1rem;
 }
 
 #navigation a:hover {
@@ -311,24 +317,23 @@ i:hover {
 }  
 
 #home-section:target ~ #footer #navigation #link-home, #about-section:target ~ #footer #navigation{
-    background: #4A4A4B}
+    background: #4A4A4B;
+    color: white; }
 
 #about-section:target ~ #footer #navigation #link-about, #home-section:target ~ #footer #navigation{
-    background: #F2994A}
+    background: #F2994A;
+    color: white;}
 
 #projects-section:target ~ #footer #navigation #link-projects, #contact-section:target ~ #footer #navigation{
-    background: #4A4A4B}
+    background: #4A4A4B;
+    color: white;}
 
 #contact-section:target ~ #footer #navigation #link-contact, #projects-section:target ~ #footer #navigation{
-    background-color: #F2994A}
+    background-color: #F2994A;
+    color: white;}
 
 
 /* Media Queries */
-  
-  @media only screen and (max-width:768px) {
-
-   
-  }
   
   @media only screen and (min-width:1024px) {
    
@@ -344,6 +349,7 @@ i:hover {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-around;
+    padding-top: 2rem;
    }
 
    .about ul {
@@ -382,5 +388,10 @@ i:hover {
    #navigation li {
     padding: 0px 40px;
     } 
+
+    #navigation a {
+        width: 150px;
+        
+    }
 
   }
