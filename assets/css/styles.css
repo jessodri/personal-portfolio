@@ -17,7 +17,7 @@ h2, h4 {
     margin-top: 2rem;
     text-align: center;
     padding: .8rem 2rem;
-    width: 40vw;
+    width: 50vw;
     align-self: flex-start;
 }
 
@@ -42,7 +42,7 @@ h3 {
     font-size: 2rem;
     font-family: 'Yantramanav', sans-serif;
     text-align: center;
-    width: 40vw;
+    width: 50vw;
 }
 
 /* Global Panel/Content Setup */
@@ -98,7 +98,9 @@ h3 {
 
 h2, h3 {
         -vendor-animation-duration: 3s;
+        animation-duration: 3s;
         -vendor-animation-delay: 5s;
+        animation-delay: 5s;
 }
 img {
     width: 100vw;
@@ -210,6 +212,9 @@ form p {
 
 }
 
+label {
+    line-height: 1rem;
+}
 input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -281,6 +286,7 @@ i:hover {
 
 #navigation {
     width: 100vw;
+    height: 10vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -327,12 +333,11 @@ i:hover {
   @media only screen and (min-width:1024px) {
    
     html, body {
-        font-size: 24px;
+        font-size: 20px;
     }
    
-    /* h2, h3, h4 {
-       font-size: 4rem;
-       width: 30rem;
+    h2, h3, h4 {
+       width: 30vw;
    }
 
    .desktop {
@@ -341,16 +346,32 @@ i:hover {
     justify-content: space-around;
    }
 
+   .about ul {
+       width: 30vw;
+       line-height: 2;
+       font-size: 1rem;
+   }
+
+   .about p {
+       width: 70vw;
+   }
+
    .contact .desktop {
        flex-direction: row;
        justify-content: space-between;
    }
-   .about h4 {
-       display: block;
+   
+   .icons {
+       display: flex;
+       flex-direction: column;
+       width: 40vw;
+       text-align: center;
    }
-
+   form {
+       width: 50vw;
+   }
    #navigation li {
     padding: 0px 40px;
-    } */
+    } 
 
   }
