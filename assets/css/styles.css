@@ -3,8 +3,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,14 +12,13 @@ html, body {
 h2, h4 {
     font-size: 2rem;
     font-family: 'Yantramanav', sans-serif;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;  
-    margin-top: 4rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;  
+    margin-top: 2rem;
     text-align: center;
-    padding: 10px 40px;
-    width: 11rem;
+    padding: .8rem 2rem;
+    width: 40vw;
     align-self: flex-start;
-    line-height: 1;
 }
 
 h2 {
@@ -33,25 +32,27 @@ h4 {
 }
 
 h3 {
+    margin-bottom: 6rem;
     background-color: #4A4A4B;
     color: white;
-    padding: 10px 40px;
+    padding: .8rem 2rem;
     align-self: flex-end;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;    
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;    
     font-size: 2rem;
     font-family: 'Yantramanav', sans-serif;
     text-align: center;
+    width: 40vw;
 }
 
 /* Global Panel/Content Setup */
 
 .panel{
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
-    margin-top: -250%;
+    margin-top: -250vh;
     position: absolute;
     /* z-index: 2; */
     -webkit-transition: all .8s linear;
@@ -66,7 +67,7 @@ h3 {
 
 .content {
     position: absolute;
-    /* padding-bottom: 2rem; */
+    padding-bottom: 2rem;
   }
 
 #home-section, #projects-section {
@@ -81,29 +82,27 @@ h3 {
 
 .panel-one {
     position: absolute;
-    min-width: 100%;
-    min-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .home {
-    width: 100%;
-    height: 90%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;   
+    justify-content: space-between;    
     }
 
 h2, h3 {
         -vendor-animation-duration: 3s;
-        animation-duration: 3s;
         -vendor-animation-delay: 5s;
-        animation-delay: 5s;
 }
 img {
-    width: 100%;
-    height: 50%;
+    width: 100vw;
+    height: 50vh;
     padding: 2rem 0rem;
 }
 
@@ -114,17 +113,18 @@ img:hover {
 
 /* About Section */
 .about {
-    width: 100%;
-    height: 90%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
     color: white;
-    line-height: 1.5;
+    line-height: 1;
 }
 
 .about p {
-    margin: 2rem;
+    margin: 2rem 2rem 1rem 2rem;
+    line-height: 1.5;
 }
 
 .about ul {
@@ -148,7 +148,7 @@ img:hover {
 }
 
 .fa-file-pdf-o span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 1rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -161,24 +161,28 @@ img:hover {
     font-size: 1.2rem;
     margin: 2rem;
     line-height: 1.5;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     padding: 1rem;
+}
+
+.project:hover {
+    background-color: #ddd;
 }
 
 .projects {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
 }
 
 .projects h3 {
-    margin: 4rem 0rem 1rem 0rem;
+    margin: 2rem 0rem 1rem 0rem;
 }
 
 .projects h5 {
     font-weight: bold;
     padding-bottom: 1rem;
-    text-decoration-line: underline;
+    font-size: 1.2rem;
 }
 
 .project p {
@@ -192,17 +196,18 @@ img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 form {
     padding-top: 1rem;
-    line-height: .5;
 }
 form p {
     padding: 1rem;
     color: white;
+    line-height: .2;
+
 }
 
 input[type=text] {
@@ -262,7 +267,6 @@ i:hover {
 }
 
 
-
 /* Navigation */
 
 #footer{
@@ -276,7 +280,7 @@ i:hover {
 }
 
 #navigation {
-    width: 100%;
+    width: 100vw;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +325,12 @@ i:hover {
   }
   
   @media only screen and (min-width:1024px) {
-   h2, h3, h4 {
+   
+    html, body {
+        font-size: 24px;
+    }
+   
+    /* h2, h3, h4 {
        font-size: 4rem;
        width: 30rem;
    }
@@ -342,11 +351,6 @@ i:hover {
 
    #navigation li {
     padding: 0px 40px;
-    }
-
-    .icons {
-    display: flex;
-    flex-direction: column;
-    }
+    } */
 
   }
