@@ -14,7 +14,7 @@ h2, h4 {
     font-family: 'Yantramanav', sans-serif;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;  
-    margin-top: 1em;
+    margin-top: 4rem;
     text-align: center;
     padding: 10px 40px;
     width: 11rem;
@@ -41,6 +41,7 @@ h3 {
     border-bottom-left-radius: 15px;    
     font-size: 2rem;
     font-family: 'Yantramanav', sans-serif;
+    text-align: center;
 }
 
 /* Global Panel/Content Setup */
@@ -56,7 +57,7 @@ h3 {
     -webkit-transition: all .8s linear;
     -moz-transition: all .8s linear;
     -o-transition: all .8s linear;
-    transition: all .8s linear;
+    transition: all .8s ease-in-out;
 }
 
 .panel:target{
@@ -91,12 +92,21 @@ h3 {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;    
+    justify-content: space-between;    
     }
 
+h2, h3 {
+        -vendor-animation-duration: 3s;
+        -vendor-animation-delay: 5s;
+}
 img {
     width: 100%;
     height: 50%;
+}
+
+img:hover {
+        -webkit-animation: tada 2s;
+        animation: tada 2s;
 }
 
 /* About Section */
@@ -159,7 +169,7 @@ img {
 }
 
 .projects h3 {
-    margin: 1rem 0rem;
+    margin: 4rem 0rem 1rem 0rem;
 }
 
 .projects h5 {
@@ -180,6 +190,7 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 
 form {
@@ -212,16 +223,21 @@ textarea {
 }
 
 button[type=submit] {
-    background-color: #ddd;
+    background-color: rgb(224, 218, 218);
     border: none;
     border-radius: 10px;
     color: #4A4A4B;
     padding: 10px 20px;
     text-decoration: none;
-    margin: 4px 2px;
+    margin: 0 auto;
     cursor: pointer;
-    width: 100%;
     font-size: 1rem;
+    display: block;
+}
+
+button:hover {
+    background-color: #F2994A;
+    color: white;
 }
 
 .fa {
@@ -230,9 +246,18 @@ button[type=submit] {
 .fa-github-square {
     color: white;
 }
+
 .fa-linkedin-square, .fa-twitter-square {
     color: #F2994A;
 }
+
+i:hover {
+    font-size: 4.2rem;
+    text-shadow: 0 0 15px rgb(7, 7, 7);
+
+}
+
+
 
 /* Navigation */
 
@@ -283,3 +308,41 @@ button[type=submit] {
 #contact-section:target ~ #footer #navigation #link-contact, #projects-section:target ~ #footer #navigation{
     background-color: #F2994A}
 
+
+/* Media Queries */
+  
+  @media only screen and (max-width:1024px) {
+
+   
+  }
+  
+  @media only screen and (min-width:1024px) {
+   h2, h3, h4 {
+       font-size: 4rem;
+       width: 30rem;
+   }
+
+   .desktop {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+   }
+
+   .contact .desktop {
+       flex-direction: row;
+       justify-content: space-between;
+   }
+   .about h4 {
+       display: block;
+   }
+
+   #navigation li {
+    padding: 0px 40px;
+    }
+
+    .icons {
+    display: flex;
+    flex-direction: column;
+    }
+
+  }

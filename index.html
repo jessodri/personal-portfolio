@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title" content="Jessica Odri | Junior Web Developer">
+    <meta name="description" content="Jessica Odri is a Junior Web Developer from Melbourne, Australia.">
+
     <title>Jessica Odri</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+    integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+    crossorigin="anonymous">    
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Yantramanav" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
@@ -16,24 +24,27 @@
 
     <section id="home-section" class="panel-one">
         <div class="home content">
-            <h2>Jessica Odri</h2>
-            <img src="assets/img/jo-logo-3d.svg" alt="logo made of initials J and O">
-            <h3>Web Developer</h3>
+            <h2 class="animated slideInLeft">Jessica Odri</h2>
+            <img class="" src="assets/img/jo-logo-3d.svg" alt="logo made of initials J and O">
+            <h3 class="animated slideInRight">Web Developer</h3>
         </div>
     </section>
     
     <section id="about-section" class="panel">
         <div class="about content">
             <h4>About</h4>
-            <p>Hello! I’m Jess , an aspiring web developer. I love to create clean, 
-                (fun)ctional websites where even the smallest detail has an important 
-                role to play.
-            </p>
-            <p>When I’m not coding, I enjoy reading a good novel and running an instagram 
-                page for my cats, Gimpy and Alfie.
-            </p>
-            <a href="assets/Jessica_Odri_Resume_2017.pdf"><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"><span>Download CV</span></i></a>
-            <ul>
+            <div class="desktop">
+                <div>
+                <p>Hello! I’m Jess , an aspiring web developer. I love to create clean, 
+                    (fun)ctional websites where even the smallest detail has an important 
+                    role to play.
+                </p>
+                <p>When I’m not coding, I enjoy reading a good novel and running an instagram 
+                    page for my cats, Gimpy and Alfie.
+                </p>
+                <a href="assets/Jessica_Odri_Resume_2017.pdf"><i class="fa fa-file-pdf-o fa-3x" aria-hidden="true"><span>Download CV</span></i></a>
+           </div>
+           <ul>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>SASS/SCSS</li>
@@ -45,7 +56,9 @@
                 <li>SQL</li>
                 <li>Ruby</li>
                 <li>Ruby on Rails</li>
-            </ul>
+            </ul>           
+        </div> 
+
         </div>
     </section>
 
@@ -57,10 +70,13 @@
                 <p>Unforgettable is a simple yet challenging game designed to exercise and help 
                     improve memory retention. 
                 </p>
+                <a href="https://github.com/jessodri/memory_app"><p>Click here to view this project</p></a>
+                
             </div>  
             <div class="project">
                 <h5>Colmar Academy</h5>
                 <p>This project is a landing page for a fictional school called Colmar Academy.</p>
+                <a href="https://github.com/jessodri/Colmar-Academy"><p>Click here to view this project</p></a>
             </div>
         </div>
     </section>
@@ -68,7 +84,7 @@
     <section id="contact-section" class="panel">
         <div class="contact content">
             <h4>Contact</h4>
-         
+         <div class="desktop">
             <form name="contact" method="POST" netlify>
                 <p>
                     <label>Your Name:  <input type="text" name="name"></label>   
@@ -83,11 +99,12 @@
                     <button type="submit">Send</button>
                 </p>
             </form>
-            <div>
+            <div class="icons">
                     <a href="https://linkedin.com/in/jessicaodri"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
                     <a href="https://github.com/jessodri"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
                     <a href="https://twitter.com/JessicaOdri"><i class="fa fa-twitter-square fa-4x" aria-hidden="true"></i></a>
             </div>
+        </div>
         </div>
     </section>
 
