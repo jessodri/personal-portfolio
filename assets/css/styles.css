@@ -204,8 +204,8 @@ img:hover {
 
 form {
     padding-top: 1rem;
-    height: 50vh;
 }
+
 
 form p {
     padding: .5rem;
@@ -221,6 +221,13 @@ input[type=text] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border-radius: .5rem;
+    border: 0;
+}
+
+input[type=text]:focus {
+    outline: 0px;
+    box-shadow: 0pt 0pt 3pt 2pt orange;
 }
 
 input[type=email] {
@@ -228,15 +235,30 @@ input[type=email] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border-radius: .5rem;
+    border: 0;
 }
+
+input[type=email]:focus {
+    outline: 0px;
+    box-shadow: 0pt 0pt 3pt 2pt orange;
+}
+
 
 textarea {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+    border-radius: .5rem;
+    border: 0;
+    resize: none;
 }
 
+textarea:focus {
+    outline: 0px;
+    box-shadow: 0pt 0pt 3pt 2pt orange;
+}
 button[type=submit] {
     background-color: rgb(224, 218, 218);
     border: none;
@@ -272,7 +294,6 @@ i:hover {
 
 }
 
-
 /* Navigation */
 
 #footer{
@@ -280,14 +301,14 @@ i:hover {
     position: absolute;
     z-index: 2000;
     width: 100vw;
-    top: 90vh;
-    height: 10vh;
+    top: 88vh;
+    height: 12vh;
     bottom: 0;
 }
 
 #navigation {
     width: 100vw;
-    height: 10vh;
+    min-height: 10vh;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +317,7 @@ i:hover {
 }
 
 #navigation li {
-    padding: 0px 5px;
+    padding: 5px 5px;
     align-items: center;
 }
 
@@ -316,6 +337,10 @@ i:hover {
 #navigation a:hover {
     background: #ddd;
 }  
+
+#home-section:target ~ #footer #navigation #link-home, #about-section:target ~ #footer #navigation{
+    background: #4A4A4B;
+    color: white; }
 
 #home-section:target ~ #footer #navigation #link-home, #about-section:target ~ #footer #navigation{
     background: #4A4A4B;
