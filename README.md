@@ -5,6 +5,9 @@
 The aim of this project is to create a personal portfolio website. The intended audience will be future employers and clients. My goal is to create something professional but that is also unique and will stand out. The content on my website contains information about me, examples of the projects I've done and contact information. 
 
 ## Inspiration
+
+See full figma plan at: <https://www.figma.com/file/aBBEp663xXrIH2ShnEmkfKcz/Jessica's-Personal-Portfolio>
+
 When I first started planning this website I struggled to find inspiration. I tried doing a color palette of my favorite painting and even a color palette of my cat! 
 
 ![portfolio inspiration](/assets/img/inspiration.png)
@@ -20,7 +23,6 @@ I chose the winter theme because I lived in Canada for several years and I love 
 I did a mood board on pinterest mainly of color palettes and pictures I liked. It didn't really help me very much but it was a nice place to look up my chosen color combinations and see what ways they can be used together.
 
 ![portfolio moodboard](/assets/img/moodboard.png)
-
 
 I decided to start again, and my next design was the one I kept! 
 
@@ -67,7 +69,7 @@ Below is an example of the mobile layout. I aim to keep it very similar in the d
 
 Originally I wanted swipe navigation on my website but as I was trying to only use HTML and CSS I could not find a CSS method to implement the swiping function. There were some ways but they would not be compatible with many browsers and may not function very well on some devices.
 
-I went with a navigation that looks very similar to swiping (as I will probably add that feature in the future) but requires the user to actually press the button. It uses anchor tags to link to each section.
+I went with a navigation that requires the user to actually press the labeled button. It uses anchor tags to link to each section.
 
 #### About
 
@@ -87,7 +89,7 @@ The coding for my website was fairly straight forward once I had my design finis
 
 ## Responsiveness
 
-Due to its simple layout and use of flexbox my site is reasonably responsive but I still needed some media queries to make it look more organized and make the most of the extra space when viewing on a desktop.
+Due to its simple layout and use of flexbox my site is reasonably responsive but I still needed some media queries to make it look more organized and make the most of the extra space when viewing on a desktop. I still need to work on landscape view for mobile - it works but could be better.
 
 ### Final Product (Desktop View)
 
