@@ -85,7 +85,9 @@ The 'Contact' section contains a contact form and icons that link to my Github, 
 
 ## Coding
 
-The coding for my website was fairly straight forward once I had my design finished. I used flexbox to layout the structure of the page. I did spend a lot of time trying to fix small things, like a box that is out of alignment etc. It took a while to figure out how to fix things without detroying the whole site!
+The coding for my website was fairly straight forward once I had my design finished. I used flexbox to lay out the structure of the page. I did spend a lot of time trying to fix small things, like a box that is out of alignment etc. It took a while to figure out how to fix things without detroying the whole site!
+
+Because I spent so long trying to figure out how to do a swipe navigation my actual navigation is not quite set up how I want it. But that is ok because I will likely add some javascript at a later point.
 
 ## Responsiveness
 
@@ -103,6 +105,8 @@ Due to its simple layout and use of flexbox my site is reasonably responsive but
 There were many challenges. Finding inspiration and settling on a design were probably the hardest parts for me.
 
 Trying to use only HTML and CSS was a bit hard when it came to not being able to implement a feature I wanted such as the swiping navigation. However, it helped me learn more about what CSS has to offer.
+
+It was difficult to make it fit the screen for certain mobile browser such as Safari as they pushed my nav bar out of view. I am still working on a solution for this.
 
 ## Resources
 
