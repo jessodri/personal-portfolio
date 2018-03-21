@@ -108,6 +108,8 @@ Trying to use only HTML and CSS was a bit hard when it came to not being able to
 
 It was difficult to make it fit the screen for certain mobile browser such as Safari as they pushed my nav bar out of view. I am still working on a solution for this.
 
+Another challenge is spending a long time doing things a certain way and then learning a better way but not having enough time to implement it!
+
 ## Resources
 
 I used many useful resources:
